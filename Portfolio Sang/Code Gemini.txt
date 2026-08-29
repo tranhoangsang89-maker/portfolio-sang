@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - Trần Hoàng Sang</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+    background-color: #070d18;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e2e8f0;
+    background-color: #070d18;
+    line-height: 1.34;
+    font-size: 8.5pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+  /* Header Card */
+  .header-card {
+    background: linear-gradient(135deg, #131d31 0%, #0c1424 100%);
+    border: 1px solid #1e293b;
+    border-radius: 9px;
+    padding: 9px 13px;
+    margin-bottom: 7px;
+    display: table;
+    width: 100%;
+  }
+
+  .header-avatar {
+    display: table-cell;
+    width: 65px;
+    vertical-align: middle;
+    padding-right: 11px;
+  }
+
+  .avatar-img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+    display: block;
+  }
+
+  .header-left {
+    display: table-cell;
+    vertical-align: middle;
+    width: 53%;
+  }
+
+  .header-right {
+    display: table-cell;
+    vertical-align: middle;
+    width: 39%;
+    text-align: right;
+    border-left: 1px solid #233554;
+    padding-left: 11px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 6.6pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  h1 {
+    margin: 0 0 2px 0;
+    font-size: 15pt;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+  }
+
+  .subtitle {
+    font-size: 8.3pt;
+    color: #38bdf8;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.22;
+  }
+
+  .contact-item {
+    font-size: 7.5pt;
+    color: #cbd5e1;
+    margin: 1.5px 0;
+    line-height: 1.25;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: 9.6pt;
+    font-weight: 700;
+    color: #ffffff;
+    border-left: 3.5px solid #38bdf8;
+    padding-left: 7px;
+    margin: 7px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .section-subtitle {
+    font-size: 7.2pt;
+    color: #94a3b8;
+    margin: -3px 0 6px 11px;
+    font-style: italic;
+  }
+
+  /* Tech Stack Strip */
+  .tech-stack-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-bottom: 7px;
+  }
+
+  .tech-row {
+    display: table;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .tech-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .tech-cat {
+    display: table-cell;
+    width: 28%;
+    font-size: 7.2pt;
+    font-weight: 700;
+    color: #38bdf8;
+    vertical-align: middle;
+  }
+
+  .tech-items {
+    display: table-cell;
+    width: 72%;
+    font-size: 7.1pt;
+    color: #cbd5e1;
+    vertical-align: middle;
+  }
+
+  .tech-tag {
+    display: inline-block;
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1px 5px;
+    border-radius: 3px;
+    border: 1px solid #334155;
+    margin-right: 3px;
+  }
+
+  /* Showcase Grid */
+  .grid-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+  }
+
+  .grid-table td {
+    width: 50%;
+    vertical-align: top;
+    padding: 0;
+  }
+
+  .showcase-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 7px;
+    padding: 7px 8px;
+    display: table;
+    width: 100%;
+  }
+
+  .card-img-col {
+    display: table-cell;
+    width: 37%;
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 8px;
+  }
+
+  .card-img-col img {
+    width: 100%;
+    max-height: 132px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #020617;
+  }
+
+  .card-content-col {
+    display: table-cell;
+    width: 63%;
+    vertical-align: middle;
+  }
+
+  .card-badge {
+    float: right;
+    font-size: 5.8pt;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: #0284c7;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .card-title {
+    font-size: 8.3pt;
+    font-weight: 700;
+    color: #38bdf8;
+    margin: 0 0 2px 0;
+    line-height: 1.18;
+  }
+
+  .card-desc {
+    font-size: 7.2pt;
+    color: #94a3b8;
+    margin: 0 0 3px 0;
+    line-height: 1.2;
+  }
+
+  .card-metrics {
+    background: rgba(14, 165, 233, 0.08);
+    border-left: 2px solid #38bdf8;
+    padding: 2px 5px;
+    font-size: 6.8pt;
+    color: #7dd3fc;
+    margin-bottom: 3px;
+    line-height: 1.2;
+  }
+
+  .card-features {
+    margin: 0;
+    padding-left: 11px;
+    font-size: 6.9pt;
+    color: #cbd5e1;
+    line-height: 1.22;
+  }
+
+  .card-features li {
+    margin-bottom: 1px;
+  }
+
+  .card-link-btn {
+    display: inline-block;
+    margin-top: 3px;
+    font-size: 6.5pt;
+    color: #38bdf8;
+    font-family: monospace;
+    font-weight: 700;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(15, 23, 42, 0.8);
+  }
+
+  /* Page Break */
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  /* Value Banner */
+  .value-banner {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.12) 0%, rgba(15, 23, 42, 0.6) 100%);
+    border: 1px dashed #0284c7;
+    border-radius: 7px;
+    padding: 7px 11px;
+    margin-top: 6px;
+    display: table;
+    width: 100%;
+  }
+
+  .value-col {
+    display: table-cell;
+    width: 33.33%;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  .value-head {
+    font-weight: 700;
+    color: #38bdf8;
+    font-size: 7.7pt;
+    margin-bottom: 2px;
+  }
+
+  .value-sub {
+    font-size: 6.9pt;
+    color: #94a3b8;
+    margin: 0;
+    line-height: 1.22;
+  }
+
+  /* Hub Box */
+  .hub-box {
+    background: #0c1424;
+    border: 1px solid #38bdf8;
+    border-radius: 7px;
+    padding: 7px 11px;
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .hub-box h4 {
+    margin: 0 0 2px 0;
+    color: #ffffff;
+    font-size: 8.5pt;
+  }
+
+  .hub-box p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 7.4pt;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== TRANG 1 ==================== -->
+
+  <!-- HEADER -->
+  <div class="header-card">
+    <div class="header-avatar">
+      <img src="https://cty-solar24h.tranhoangsang89.workers.dev/avatar.jpg" alt="Trần Hoàng Sang" class="avatar-img" onerror="this.src='https://via.placeholder.com/150/0284c7/ffffff?text=THS'">
+    </div>
+    <div class="header-left">
+      <div class="badge">CAPABILITY PROFILE & MULTI-INDUSTRY CASE STUDIES</div>
+      <h1>TRẦN HOÀNG SANG</h1>
+      <div class="subtitle">Head of Digital Transformation | AI Solutions Architect</div>
+    </div>
+    <div class="header-right">
+      <div class="contact-item">📱 Hotline / Zalo: <strong><a href="tel:0888003205" style="color:#ffffff;">0888.003.205</a></strong></div>
+      <div class="contact-item">✉️ Email: <strong><a href="mailto:tranhoangsang89@gmail.com" style="color:#ffffff;">tranhoangsang89@gmail.com</a></strong></div>
+      <div class="contact-item">🌐 Live Portal: <strong><a href="https://cty-solar24h.tranhoangsang89.workers.dev/" target="_blank" style="color:#38bdf8;">cty-solar24h...workers.dev</a></strong></div>
+    </div>
+  </div>
+
+  <!-- KHUNG CÔNG NGHỆ (TECH STACK MASTERED) -->
+  <div class="section-title">1. KHUNG NĂNG LỰC CÔNG NGHỆ (TECH STACK MASTERED)</div>
+  <div class="tech-stack-card">
+    <div class="tech-row">
+      <div class="tech-cat">⚡ Frontend & UI Frameworks:</div>
+      <div class="tech-items">
+        <span class="tech-tag">React/Next.js</span>
+        <span class="tech-tag">Streamlit (Python)</span>
+        <span class="tech-tag">Tailwind CSS</span>
+        <span class="tech-tag">HTML5/CSS3</span>
+        <span class="tech-tag">Figma/Canva AI</span>
+      </div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-cat">🗄️ Backend, Database & APIs:</div>
+      <div class="tech-items">
+        <span class="tech-tag">Python Scripting</span>
+        <span class="tech-tag">Supabase (PostgreSQL)</span>
+        <span class="tech-tag">RESTful APIs</span>
+        <span class="tech-tag">Google Sheets API</span>
+        <span class="tech-tag">RBAC Security</span>
+      </div>
+    </div>
+    <div class="tech-row">
+      <div class="tech-cat">🤖 AI, Automation & Cloud:</div>
+      <div class="tech-items">
+        <span class="tech-tag">Prompt Engineering (GPT/Claude)</span>
+        <span class="tech-tag">Google Antigravity IDE</span>
+        <span class="tech-tag">Cloudflare Workers</span>
+        <span class="tech-tag">Vercel</span>
+        <span class="tech-tag">Netlify</span>
+        <span class="tech-tag">Render</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOWCASE PHẦN 1 (CASE STUDY ĐA MÔ HÌNH) -->
+  <div class="section-title">2. CASE STUDY: HỆ SINH THÁI CHUYỂN ĐỔI SỐ TOÀN DIỆN (PHẦN 1)</div>
+  <div class="section-subtitle">*Kiến trúc module tùy biến cao, sẵn sàng ứng dụng cho Năng lượng, Bán lẻ, F&B, Logistics và Bất động sản.</div>
+
+  <table class="grid-table">
+    <tr>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop" alt="Solar Girl AI">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">AI AGENT / LLM</span>
+            <div class="card-title">🤖 Trợ Lý AI Tư Vấn & CSKH 24/7</div>
+            <div class="card-desc">Huấn luyện LLM trên kho tri thức sản phẩm & chính sách giá riêng của doanh nghiệp.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Phản hồi tức thì 100% 24/7; tự động phân loại & chốt <strong>45% lượng lead</strong>.</div>
+            <ul class="card-features">
+              <li>Tương tác tự nhiên qua giọng nói & văn bản.</li>
+              <li>Tích hợp đa ngành: CSKH, F&B, Tư vấn BĐS.</li>
+            </ul>
+            <a class="card-link-btn" href="https://solargirlai.onrender.com" target="_blank">🌐 solargirlai.onrender.com ↗</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?w=300&auto=format&fit=crop" alt="Báo Giá Nhanh">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">AUTO PDF ENGINE</span>
+            <div class="card-title">⚡ Dự Toán & Xuất Báo Giá PDF</div>
+            <div class="card-desc">Tự động hóa bóc tách vật tư, phân tích dòng tiền và tạo hợp đồng chuẩn thương hiệu.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Giảm thời gian lập báo giá từ <strong>30 phút xuống 3 giây</strong> (-99%).</div>
+            <ul class="card-features">
+              <li>Tính toán hoàn vốn ROI, trả góp & công suất.</li>
+              <li>Xuất file PDF chuyên nghiệp gửi khách ngay.</li>
+            </ul>
+            <a class="card-link-btn" href="https://baogia-solar24h.netlify.app" target="_blank">🌐 baogia-solar24h.netlify.app ↗</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&auto=format&fit=crop" alt="Quản Trị Nhân Sự">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">HRM & DIRECTORY</span>
+            <div class="card-title">👥 App Quản Trị Nhân Sự & Phòng Ban</div>
+            <div class="card-desc">Số hóa hồ sơ nhân sự, phân luồng chức vụ và theo dõi trạng thái nhân sự realtime.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Giảm <strong>70% thời gian</strong> onboarding; chuẩn hóa 100% dữ liệu nhân sự.</div>
+            <ul class="card-features">
+              <li>Giao diện thẻ Profile Cards & biểu đồ trực quan.</li>
+              <li>Phân quyền dữ liệu theo vai trò (RBAC Security).</li>
+            </ul>
+            <a class="card-link-btn" href="https://solar24h-hr.vercel.app" target="_blank">🌐 solar24h-hr.vercel.app ↗</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=300&auto=format&fit=crop" alt="Quản Lý Kinh Doanh">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">SALES & CRM BI</span>
+            <div class="card-title">📊 Quản Lý Kinh Doanh & Đo Lường KPI</div>
+            <div class="card-desc">Hệ thống giám sát phễu khách hàng tiềm năng, tiến độ hợp đồng và hiệu suất Sales.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Tăng <strong>35% tốc độ chốt đơn</strong>; cập nhật báo cáo tự động 100%.</div>
+            <ul class="card-features">
+              <li>Dashboard doanh số & tỷ lệ chuyển đổi realtime.</li>
+              <li>Tối ưu cho đội ngũ kinh doanh chuỗi & B2B.</li>
+            </ul>
+            <a class="card-link-btn" href="https://kinhdoanh-solar24h.vercel.app" target="_blank">🌐 kinhdoanh-solar24h.vercel.app ↗</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ==================== TRANG 2 ==================== -->
+  <div class="page-break"></div>
+
+  <!-- SHOWCASE PHẦN 2 -->
+  <div class="section-title">2. CASE STUDY: HỆ SINH THÁI CHUYỂN ĐỔI SỐ TOÀN DIỆN (PHẦN 2)</div>
+  <div class="section-subtitle">*Mô hình ứng dụng thực tế cho Dịch vụ Tiện ích, Bán lẻ Thiết bị, Thiết kế Kỹ thuật và Media.</div>
+
+  <table class="grid-table">
+    <tr>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=300&auto=format&fit=crop" alt="Trạm Sạc 24h">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">QR LOYALTY & REWARD</span>
+            <div class="card-title">⚡ App Trạm Sạc & Tích Điểm Đổi Quà</div>
+            <div class="card-desc">Hệ thống Loyalty quét mã QR tích lũy điểm thưởng cho khách hàng sử dụng dịch vụ.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Tăng <strong>65% tỷ lệ giữ chân khách</strong>; cắt giảm 100% chi phí in thẻ cứng.</div>
+            <ul class="card-features">
+              <li>Tra cứu lịch sử giao dịch & thứ hạng thành viên.</li>
+              <li>Áp dụng linh hoạt cho chuỗi F&B, Cafe, Trạm nghỉ.</li>
+            </ul>
+            <a class="card-link-btn" href="https://tramsac-solar24h.netlify.app" target="_blank">🌐 tramsac-solar24h.netlify.app ↗</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=300&auto=format&fit=crop" alt="Bảng Giá Sản Phẩm">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">E-CATALOG PORTAL</span>
+            <div class="card-title">📦 Cổng Bảng Giá Bán Lẻ & Thiết Bị</div>
+            <div class="card-desc">Cổng tra cứu danh mục sản phẩm, thông số kỹ thuật và báo giá vật tư chính hãng.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Loại bỏ sai lệch giá tồn kho; tra cứu sản phẩm tức thì trong <strong>1 giây</strong>.</div>
+            <ul class="card-features">
+              <li>Bộ lọc thông minh theo thương hiệu, chủng loại.</li>
+              <li>Đồng bộ giá bán trực tiếp từ Database trung tâm.</li>
+            </ul>
+            <a class="card-link-btn" href="https://sanpham-solar24h.vercel.app" target="_blank">🌐 sanpham-solar24h.vercel.app ↗</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=300&auto=format&fit=crop" alt="Thiết Kế 3D">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">CAD & 3D REPOSITORY</span>
+            <div class="card-title">📐 Web App Thiết Kế & Bản Vẽ Kỹ Thuật</div>
+            <div class="card-desc">Không gian lưu trữ, mô phỏng sơ đồ kỹ thuật và kết xuất ý tưởng bản vẽ công trình.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Giảm <strong>50% thời gian duyệt kỹ thuật</strong> giữa các phòng ban.</div>
+            <ul class="card-features">
+              <li>Tra cứu sơ đồ nguyên lý, layout lắp đặt 2D/3D.</li>
+              <li>Tối ưu cho ngành xây dựng, cơ điện & năng lượng.</li>
+            </ul>
+            <a class="card-link-btn" href="https://solar24h3d.netlify.app" target="_blank">🌐 solar24h3d.netlify.app ↗</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="showcase-card">
+          <div class="card-img-col">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&auto=format&fit=crop" alt="Fanpage Ecosystem">
+          </div>
+          <div class="card-content-col">
+            <span class="card-badge">OMNICHANNEL MEDIA</span>
+            <div class="card-title">🌐 Fanpage & Media Brand Hub</div>
+            <div class="card-desc">Cổng kết nối truyền thông thương hiệu, đồng bộ đa kênh marketing và CSKH đa nền tảng.</div>
+            <div class="card-metrics">📈 <strong>Hiệu quả:</strong> Tăng <strong>120% tương tác tự nhiên</strong> nhờ nội dung sáng tạo bằng AI.</div>
+            <ul class="card-features">
+              <li>Định hình nhân vật đại diện thương hiệu (Mascot).</li>
+              <li>Sản xuất video/audio quảng cáo tự động bằng AI.</li>
+            </ul>
+            <a class="card-link-btn" href="https://facebook.com/solar24h" target="_blank">🌐 facebook.com/solar24h ↗</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- GIÁ TRỊ CỐT LÕI (WHY CHOOSE THIS ARCHITECTURE) -->
+  <div class="section-title">3. TẠI SAO DOANH NGHIỆP NÊN CHỌN GIẢI PHÁP MAY ĐO TINH GỌN?</div>
+
+  <div class="value-banner">
+    <div class="value-col">
+      <div class="value-head">⚡ Triển Khai Siêu Tốc (7 – 14 Ngày)</div>
+      <p class="value-sub">Làm chủ phương pháp <strong>Vibe Coding & AI thế hệ mới</strong>, rút ngắn 80% thời gian so với quy trình code truyền thống cồng kềnh.</p>
+    </div>
+    <div class="value-col">
+      <div class="value-head">💰 Sở Hữu 100% & Không Phí Ẩn</div>
+      <p class="value-sub">Doanh nghiệp sở hữu vĩnh viễn hệ thống và Database riêng, không phải trả phí thuê bao định kỳ đắt đỏ theo đầu người dùng.</p>
+    </div>
+    <div class="value-col">
+      <div class="value-head">🎯 May Đo Đúng Nỗi Đau Vận Hành</div>
+      <p class="value-sub">Thiết kế bám sát 100% luồng công việc thực tế, nhân sự sử dụng được ngay lập tức mà không cần đào tạo phức tạp.</p>
+    </div>
+  </div>
+
+  <!-- CỔNG HUB TRẢI NGHIỆM TRỰC TIẾP & LIÊN HỆ -->
+  <div class="hub-box">
+    <h4>🚀 TRẢI NGHIỆM TRỰC TIẾP HỆ SINH THÁI TẬP TRUNG TẠI:</h4>
+    <p style="margin-top: 2px; font-size: 8.4pt;">
+      <a href="https://cty-solar24h.tranhoangsang89.workers.dev/" target="_blank">
+        <strong>https://cty-solar24h.tranhoangsang89.workers.dev/ ↗</strong>
+      </a>
+    </p>
+    <p style="margin-top: 3px; color: #cbd5e1; font-size: 7.7pt;">
+      Tư vấn & Triển khai Giải pháp Chuyển đổi số: 
+      <strong>Trần Hoàng Sang | <a href="tel:0888003205" style="color:#ffffff;">0888.003.205</a> | <a href="mailto:tranhoangsang89@gmail.com" style="color:#ffffff;">tranhoangsang89@gmail.com</a></strong>
+    </p>
+  </div>
+
+</body>
+</html>
