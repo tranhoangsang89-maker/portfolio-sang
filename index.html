@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Trần Hoàng Sang | Chuyên gia Chuyển đổi số</title>
+    <title data-i18n="title">Portfolio - Trần Hoàng Sang | Chuyên gia Chuyển đổi số</title>
     <meta name="description" content="Portfolio của Trần Hoàng Sang - Head of Digital Transformation & AI Solutions Architect.">
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,19 @@
         <div class="glow-orb orb-2"></div>
     </div>
 
+    <!-- Language Switcher -->
+    <div class="lang-switcher glass-panel fade-in-up">
+        <button class="lang-btn active" data-lang="vi" onclick="changeLanguage('vi')">
+            <img src="https://flagcdn.com/w20/vn.png" width="20" alt="VN"> VN
+        </button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">
+            <img src="https://flagcdn.com/w20/us.png" width="20" alt="EN"> EN
+        </button>
+        <button class="lang-btn" data-lang="zh" onclick="changeLanguage('zh')">
+            <img src="https://flagcdn.com/w20/cn.png" width="20" alt="CN"> 中文
+        </button>
+    </div>
+
     <main class="container">
         <!-- HEADER SECTION -->
         <header class="header-card glass-panel fade-in-up">
@@ -27,9 +40,9 @@
                     <div class="avatar-ring"></div>
                 </div>
                 <div class="header-info">
-                    <span class="badge">Capability Profile & Multi-industry Case Studies</span>
+                    <span class="badge" data-i18n="badge_header">Capability Profile & Multi-industry Case Studies</span>
                     <h1>Trần Hoàng Sang</h1>
-                    <h2 class="subtitle">Head of Digital Transformation | AI Solutions Architect</h2>
+                    <h2 class="subtitle" data-i18n="job_title">Head of Digital Transformation | AI Solutions Architect</h2>
                 </div>
                 <div class="header-contact">
                     <a href="tel:0888003205" class="contact-btn">
@@ -42,7 +55,7 @@
                     </a>
                     <a href="https://cty-solar24h.tranhoangsang89.workers.dev/" target="_blank" class="contact-btn primary">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        Live Portal
+                        <span data-i18n="btn_portal">Live Portal</span>
                     </a>
                 </div>
             </div>
@@ -52,32 +65,32 @@
         <section class="section fade-in-up" style="animation-delay: 0.1s;">
             <div class="section-header">
                 <span class="section-number">01</span>
-                <h3 class="section-title">Giới Thiệu Bản Thân</h3>
+                <h3 class="section-title" data-i18n="sec1_title">Giới Thiệu Bản Thân</h3>
             </div>
             <div class="about-grid">
                 <div class="about-info glass-panel">
                     <ul class="info-list">
-                        <li><span class="info-label">Ngày sinh:</span> 28/06/1989</li>
-                        <li><span class="info-label">Điện thoại:</span> 0888.003.205</li>
+                        <li><span class="info-label" data-i18n="info_dob">Ngày sinh:</span> 28/06/1989</li>
+                        <li><span class="info-label" data-i18n="info_phone">Điện thoại:</span> 0888.003.205</li>
                         <li><span class="info-label">Email:</span> tranhoangsang89@gmail.com</li>
-                        <li><span class="info-label">Địa chỉ:</span> 108/1B Lê Thị Hồng Gấm, Phường Thới Sơn, Tỉnh Đồng Tháp.</li>
+                        <li><span class="info-label" data-i18n="info_address">Địa chỉ:</span> <span data-i18n="address_val">108/1B Lê Thị Hồng Gấm, Phường Thới Sơn, Tỉnh Đồng Tháp.</span></li>
                     </ul>
                 </div>
                 <div class="about-bio glass-panel">
-                    <p class="bio-text">
+                    <p class="bio-text" data-i18n="bio">
                         Kinh nghiệm đa dạng với hơn <strong>2 năm làm Marketing</strong> tại Showroom ô tô VinFast, <strong>3 năm tự vận hành</strong> cửa hàng tạp hóa Hoàng Khánh, và <strong>1 năm làm Quản lý nhân sự kiêm Social Media</strong> tại công ty Solar 24h. 
                     </p>
                     <div class="strengths-box">
                         <div class="strength-item">
                             <span class="strength-icon">⚡</span>
                             <div>
-                                <strong>Điểm mạnh:</strong> Khả năng xử lý công việc thần tốc bằng các công cụ AI chuyên dụng. Luôn thích tự mình làm chủ và hoàn thành mọi quy trình.
+                                <strong data-i18n="strength_title">Điểm mạnh:</strong> <span data-i18n="strength_desc">Khả năng xử lý công việc thần tốc bằng các công cụ AI chuyên dụng. Luôn thích tự mình làm chủ và hoàn thành mọi quy trình.</span>
                             </div>
                         </div>
                         <div class="strength-item">
                             <span class="strength-icon">🎯</span>
                             <div>
-                                <strong>Phong cách:</strong> Nhanh gọn, dứt khoát. Chỉ quan tâm đến kết quả cuối cùng, không quan tâm sự cồng kềnh của quá trình thực hiện.
+                                <strong data-i18n="style_title">Phong cách:</strong> <span data-i18n="style_desc">Nhanh gọn, dứt khoát. Chỉ quan tâm đến kết quả cuối cùng, không quan tâm sự cồng kềnh của quá trình thực hiện.</span>
                             </div>
                         </div>
                     </div>
@@ -89,18 +102,18 @@
         <section class="section fade-in-up" style="animation-delay: 0.2s;">
             <div class="section-header">
                 <span class="section-number">02</span>
-                <h3 class="section-title">Mục Tiêu Nghề Nghiệp</h3>
+                <h3 class="section-title" data-i18n="sec2_title">Mục Tiêu Nghề Nghiệp</h3>
             </div>
             <div class="goals-grid">
                 <div class="goal-card glass-panel hover-glow">
                     <div class="goal-icon">🚀</div>
-                    <h4 class="goal-title">Ngắn hạn (1-2 năm)</h4>
-                    <p class="goal-desc">Tìm kiếm và đồng hành cùng các doanh nghiệp/công ty đang cần người phát triển <strong>hệ thống web app quản lý toàn diện</strong> bằng giải pháp AI tinh gọn, giúp tối ưu hóa ngay lập tức luồng vận hành nội bộ.</p>
+                    <h4 class="goal-title" data-i18n="goal_short_title">Ngắn hạn (1-2 năm)</h4>
+                    <p class="goal-desc" data-i18n="goal_short_desc">Tìm kiếm và đồng hành cùng các doanh nghiệp/công ty đang cần người phát triển <strong>hệ thống web app quản lý toàn diện</strong> bằng giải pháp AI tinh gọn, giúp tối ưu hóa ngay lập tức luồng vận hành nội bộ.</p>
                 </div>
                 <div class="goal-card glass-panel hover-glow">
                     <div class="goal-icon">👑</div>
-                    <h4 class="goal-title">Dài hạn (3-5 năm)</h4>
-                    <p class="goal-desc">Tự mình thành lập công ty bán <strong>giải pháp phần mềm B2B</strong>. Cung cấp các hệ sinh thái chuyển đổi số may đo, thông minh và tiết kiệm tối đa chi phí cho hàng trăm doanh nghiệp vừa và nhỏ.</p>
+                    <h4 class="goal-title" data-i18n="goal_long_title">Dài hạn (3-5 năm)</h4>
+                    <p class="goal-desc" data-i18n="goal_long_desc">Tự mình thành lập công ty bán <strong>giải pháp phần mềm B2B</strong>. Cung cấp các hệ sinh thái chuyển đổi số may đo, thông minh và tiết kiệm tối đa chi phí cho hàng trăm doanh nghiệp vừa và nhỏ.</p>
                 </div>
             </div>
         </section>
@@ -109,7 +122,7 @@
         <section class="section fade-in-up" style="animation-delay: 0.3s;">
             <div class="section-header">
                 <span class="section-number">03</span>
-                <h3 class="section-title">Khung Năng Lực Công Nghệ (Tech Stack Mastered)</h3>
+                <h3 class="section-title" data-i18n="sec3_title">Khung Năng Lực Công Nghệ (Tech Stack Mastered)</h3>
             </div>
             <div class="tech-stack-card glass-panel">
                 <div class="tech-row">
@@ -159,7 +172,7 @@
                             <span class="tech-tag">AI Music Video Production</span>
                         </div>
                         <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 5px;">
-                            <strong>Các MV 100% bằng AI tiêu biểu:</strong> Vì Con, Ván Cờ Tình Yêu, Dance Like A Boss.
+                            <strong data-i18n="tech_mv_title">Các MV 100% bằng AI tiêu biểu:</strong> Vì Con, Ván Cờ Tình Yêu, Dance Like A Boss.
                         </div>
                     </div>
                 </div>
@@ -170,28 +183,28 @@
         <section class="section fade-in-up" style="animation-delay: 0.4s;">
             <div class="section-header">
                 <span class="section-number">04</span>
-                <h3 class="section-title">Thành Tựu & Chứng Chỉ</h3>
+                <h3 class="section-title" data-i18n="sec4_title">Thành Tựu & Chứng Chỉ</h3>
             </div>
             <div class="achievements-container">
                 <div class="quote-box glass-panel">
                     <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1.5.5 1.5 1.5L5 19c0 1 1 2 2 2z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.5c0 1.5-.5 2.5-1.5 3.5-.86.86-1.5 1.5-1.5 2.5 0 1 1 2 2 2z"></path></svg>
-                    <p class="quote-content">"Tôi chưa từng học qua khóa đào tạo AI chuyên nghiệp nào cả. Tất cả kiến thức và thành quả đạt được đều đến từ sự tự học và tự trải nghiệm."</p>
-                    <div class="quote-author">— Tinh thần <strong>Auto-didact (Tự học)</strong> cốt lõi</div>
+                    <p class="quote-content" data-i18n="quote">"Tôi chưa từng học qua khóa đào tạo AI chuyên nghiệp nào cả. Tất cả kiến thức và thành quả đạt được đều đến từ sự tự học và tự trải nghiệm."</p>
+                    <div class="quote-author" data-i18n="quote_author">— Tinh thần <strong>Auto-didact (Tự học)</strong> cốt lõi</div>
                 </div>
                 
                 <div class="achievements-list">
                     <div class="achievement-item glass-panel hover-lift">
                         <div class="achievement-icon">🏆</div>
                         <div class="achievement-info">
-                            <h4>Hệ thống Tích điểm Trạm Sạc</h4>
-                            <p>Phát triển thành công hệ thống tích điểm đổi quà hoàn toàn tự động cho trạm sạc ô tô điện.</p>
+                            <h4 data-i18n="ach1_title">Hệ thống Tích điểm Trạm Sạc</h4>
+                            <p data-i18n="ach1_desc">Phát triển thành công hệ thống tích điểm đổi quà hoàn toàn tự động cho trạm sạc ô tô điện.</p>
                         </div>
                     </div>
                     <div class="achievement-item glass-panel hover-lift">
                         <div class="achievement-icon">🏢</div>
                         <div class="achievement-info">
-                            <h4>Solar 24h Hub Portal</h4>
-                            <p>Tạo ra Hub Portal quản lý toàn diện mọi hoạt động từ bán hàng, nhân sự đến truyền thông cho công ty Solar 24h.</p>
+                            <h4 data-i18n="ach2_title">Solar 24h Hub Portal</h4>
+                            <p data-i18n="ach2_desc">Tạo ra Hub Portal quản lý toàn diện mọi hoạt động từ bán hàng, nhân sự đến truyền thông cho công ty Solar 24h.</p>
                         </div>
                     </div>
                 </div>
@@ -202,8 +215,8 @@
         <section class="section fade-in-up" style="animation-delay: 0.5s;">
             <div class="section-header">
                 <span class="section-number">05</span>
-                <h3 class="section-title">Hệ Sinh Thái Chuyển Đổi Số Toàn Diện (Phần 1)</h3>
-                <p class="section-subtitle">Kiến trúc module tùy biến cao, sẵn sàng ứng dụng cho Năng lượng, Bán lẻ, F&B, Logistics và Bất động sản.</p>
+                <h3 class="section-title" data-i18n="sec5_title">Hệ Sinh Thái Chuyển Đổi Số Toàn Diện (Phần 1)</h3>
+                <p class="section-subtitle" data-i18n="sec5_sub">Kiến trúc module tùy biến cao, sẵn sàng ứng dụng cho Năng lượng, Bán lẻ, F&B, Logistics và Bất động sản.</p>
             </div>
             
             <div class="showcase-grid">
@@ -212,19 +225,19 @@
                     <div class="card-img-wrapper">
                         <img src="solargirlai.onrender.com.png" alt="Solar Girl AI">
                         <div class="overlay">
-                            <a href="https://solargirlai.onrender.com" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://solargirlai.onrender.com" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">AI AGENT / LLM</span>
-                        <h4 class="card-title">🤖 Trợ Lý AI Tư Vấn & CSKH 24/7</h4>
-                        <p class="card-desc">Huấn luyện LLM trên kho tri thức sản phẩm & chính sách giá riêng của doanh nghiệp.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p1_title">🤖 Trợ Lý AI Tư Vấn & CSKH 24/7</h4>
+                        <p class="card-desc" data-i18n="p1_desc">Huấn luyện LLM trên kho tri thức sản phẩm & chính sách giá riêng của doanh nghiệp.</p>
+                        <div class="card-metrics" data-i18n="p1_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Phản hồi tức thì 100% 24/7; tự động phân loại & chốt <strong>45% lượng lead</strong>.
                         </div>
                         <ul class="card-features">
-                            <li>Tương tác tự nhiên qua giọng nói & văn bản.</li>
-                            <li>Tích hợp đa ngành: CSKH, F&B, Tư vấn BĐS.</li>
+                            <li data-i18n="p1_f1">Tương tác tự nhiên qua giọng nói & văn bản.</li>
+                            <li data-i18n="p1_f2">Tích hợp đa ngành: CSKH, F&B, Tư vấn BĐS.</li>
                         </ul>
                     </div>
                 </article>
@@ -234,19 +247,19 @@
                     <div class="card-img-wrapper">
                         <img src="baogia-solar24h.netlify.app.png" alt="Báo Giá Nhanh">
                         <div class="overlay">
-                            <a href="https://baogia-solar24h.netlify.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://baogia-solar24h.netlify.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">AUTO PDF ENGINE</span>
-                        <h4 class="card-title">⚡ Dự Toán & Xuất Báo Giá PDF</h4>
-                        <p class="card-desc">Tự động hóa bóc tách vật tư, phân tích dòng tiền và tạo hợp đồng chuẩn thương hiệu.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p2_title">⚡ Dự Toán & Xuất Báo Giá PDF</h4>
+                        <p class="card-desc" data-i18n="p2_desc">Tự động hóa bóc tách vật tư, phân tích dòng tiền và tạo hợp đồng chuẩn thương hiệu.</p>
+                        <div class="card-metrics" data-i18n="p2_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Giảm thời gian lập báo giá từ <strong>30 phút xuống 3 giây</strong> (-99%).
                         </div>
                         <ul class="card-features">
-                            <li>Tính toán hoàn vốn ROI, trả góp & công suất.</li>
-                            <li>Xuất file PDF chuyên nghiệp gửi khách ngay.</li>
+                            <li data-i18n="p2_f1">Tính toán hoàn vốn ROI, trả góp & công suất.</li>
+                            <li data-i18n="p2_f2">Xuất file PDF chuyên nghiệp gửi khách ngay.</li>
                         </ul>
                     </div>
                 </article>
@@ -256,19 +269,19 @@
                     <div class="card-img-wrapper">
                         <img src="solar24h-hr.vercel.app.png" alt="Quản Trị Nhân Sự">
                         <div class="overlay">
-                            <a href="https://solar24h-hr.vercel.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://solar24h-hr.vercel.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">HRM & DIRECTORY</span>
-                        <h4 class="card-title">👥 App Quản Trị Nhân Sự</h4>
-                        <p class="card-desc">Số hóa hồ sơ nhân sự, phân luồng chức vụ và theo dõi trạng thái nhân sự realtime.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p3_title">👥 App Quản Trị Nhân Sự</h4>
+                        <p class="card-desc" data-i18n="p3_desc">Số hóa hồ sơ nhân sự, phân luồng chức vụ và theo dõi trạng thái nhân sự realtime.</p>
+                        <div class="card-metrics" data-i18n="p3_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Giảm <strong>70% thời gian</strong> onboarding; chuẩn hóa 100% dữ liệu nhân sự.
                         </div>
                         <ul class="card-features">
-                            <li>Giao diện thẻ Profile Cards & biểu đồ trực quan.</li>
-                            <li>Phân quyền dữ liệu theo vai trò (RBAC Security).</li>
+                            <li data-i18n="p3_f1">Giao diện thẻ Profile Cards & biểu đồ trực quan.</li>
+                            <li data-i18n="p3_f2">Phân quyền dữ liệu theo vai trò (RBAC Security).</li>
                         </ul>
                     </div>
                 </article>
@@ -278,19 +291,19 @@
                     <div class="card-img-wrapper">
                         <img src="kinhdoanh-solar24h.vercel.app.png" alt="Quản Lý Kinh Doanh">
                         <div class="overlay">
-                            <a href="https://kinhdoanh-solar24h.vercel.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://kinhdoanh-solar24h.vercel.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">SALES & CRM BI</span>
-                        <h4 class="card-title">📊 Quản Lý Kinh Doanh & KPI</h4>
-                        <p class="card-desc">Hệ thống giám sát phễu khách hàng tiềm năng, tiến độ hợp đồng và hiệu suất Sales.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p4_title">📊 Quản Lý Kinh Doanh & KPI</h4>
+                        <p class="card-desc" data-i18n="p4_desc">Hệ thống giám sát phễu khách hàng tiềm năng, tiến độ hợp đồng và hiệu suất Sales.</p>
+                        <div class="card-metrics" data-i18n="p4_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Tăng <strong>35% tốc độ chốt đơn</strong>; cập nhật báo cáo tự động 100%.
                         </div>
                         <ul class="card-features">
-                            <li>Dashboard doanh số & tỷ lệ chuyển đổi realtime.</li>
-                            <li>Tối ưu cho đội ngũ kinh doanh chuỗi & B2B.</li>
+                            <li data-i18n="p4_f1">Dashboard doanh số & tỷ lệ chuyển đổi realtime.</li>
+                            <li data-i18n="p4_f2">Tối ưu cho đội ngũ kinh doanh chuỗi & B2B.</li>
                         </ul>
                     </div>
                 </article>
@@ -301,8 +314,8 @@
         <section class="section fade-in-up" style="animation-delay: 0.1s;">
             <div class="section-header">
                 <span class="section-number">06</span>
-                <h3 class="section-title">Hệ Sinh Thái Chuyển Đổi Số Toàn Diện (Phần 2)</h3>
-                <p class="section-subtitle">Mô hình ứng dụng thực tế cho Dịch vụ Tiện ích, Bán lẻ Thiết bị, Thiết kế Kỹ thuật và Media.</p>
+                <h3 class="section-title" data-i18n="sec6_title">Hệ Sinh Thái Chuyển Đổi Số Toàn Diện (Phần 2)</h3>
+                <p class="section-subtitle" data-i18n="sec6_sub">Mô hình ứng dụng thực tế cho Dịch vụ Tiện ích, Bán lẻ Thiết bị, Thiết kế Kỹ thuật và Media.</p>
             </div>
             
             <div class="showcase-grid">
@@ -311,19 +324,19 @@
                     <div class="card-img-wrapper">
                         <img src="tramsac-solar24h.netlify.app.jpg" alt="Trạm Sạc 24h">
                         <div class="overlay">
-                            <a href="https://tramsac-solar24h.netlify.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://tramsac-solar24h.netlify.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">QR LOYALTY & REWARD</span>
-                        <h4 class="card-title">⚡ App Trạm Sạc & Tích Điểm</h4>
-                        <p class="card-desc">Hệ thống Loyalty quét mã QR tích lũy điểm thưởng cho khách hàng sử dụng dịch vụ.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p5_title">⚡ App Trạm Sạc & Tích Điểm</h4>
+                        <p class="card-desc" data-i18n="p5_desc">Hệ thống Loyalty quét mã QR tích lũy điểm thưởng cho khách hàng sử dụng dịch vụ.</p>
+                        <div class="card-metrics" data-i18n="p5_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Tăng <strong>65% tỷ lệ giữ chân khách</strong>; cắt giảm 100% chi phí in thẻ cứng.
                         </div>
                         <ul class="card-features">
-                            <li>Tra cứu lịch sử giao dịch & thứ hạng thành viên.</li>
-                            <li>Áp dụng linh hoạt cho chuỗi F&B, Cafe, Trạm nghỉ.</li>
+                            <li data-i18n="p5_f1">Tra cứu lịch sử giao dịch & thứ hạng thành viên.</li>
+                            <li data-i18n="p5_f2">Áp dụng linh hoạt cho chuỗi F&B, Cafe, Trạm nghỉ.</li>
                         </ul>
                     </div>
                 </article>
@@ -333,19 +346,19 @@
                     <div class="card-img-wrapper">
                         <img src="sanpham-solar24h.vercel.app.png" alt="Bảng Giá Sản Phẩm">
                         <div class="overlay">
-                            <a href="https://sanpham-solar24h.vercel.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://sanpham-solar24h.vercel.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">E-CATALOG PORTAL</span>
-                        <h4 class="card-title">📦 Cổng Bảng Giá Bán Lẻ</h4>
-                        <p class="card-desc">Cổng tra cứu danh mục sản phẩm, thông số kỹ thuật và báo giá vật tư chính hãng.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p6_title">📦 Cổng Bảng Giá Bán Lẻ</h4>
+                        <p class="card-desc" data-i18n="p6_desc">Cổng tra cứu danh mục sản phẩm, thông số kỹ thuật và báo giá vật tư chính hãng.</p>
+                        <div class="card-metrics" data-i18n="p6_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Loại bỏ sai lệch giá tồn kho; tra cứu sản phẩm tức thì trong <strong>1 giây</strong>.
                         </div>
                         <ul class="card-features">
-                            <li>Bộ lọc thông minh theo thương hiệu, chủng loại.</li>
-                            <li>Đồng bộ giá bán trực tiếp từ Database trung tâm.</li>
+                            <li data-i18n="p6_f1">Bộ lọc thông minh theo thương hiệu, chủng loại.</li>
+                            <li data-i18n="p6_f2">Đồng bộ giá bán trực tiếp từ Database trung tâm.</li>
                         </ul>
                     </div>
                 </article>
@@ -355,19 +368,19 @@
                     <div class="card-img-wrapper">
                         <img src="solar24h3d.netlify.app.png" alt="Thiết Kế 3D">
                         <div class="overlay">
-                            <a href="https://solar24h3d.netlify.app" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://solar24h3d.netlify.app" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">CAD & 3D REPOSITORY</span>
-                        <h4 class="card-title">📐 Web App Thiết Kế & Bản Vẽ</h4>
-                        <p class="card-desc">Không gian lưu trữ, mô phỏng sơ đồ kỹ thuật và kết xuất ý tưởng bản vẽ công trình.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p7_title">📐 Web App Thiết Kế & Bản Vẽ</h4>
+                        <p class="card-desc" data-i18n="p7_desc">Không gian lưu trữ, mô phỏng sơ đồ kỹ thuật và kết xuất ý tưởng bản vẽ công trình.</p>
+                        <div class="card-metrics" data-i18n="p7_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Giảm <strong>50% thời gian duyệt kỹ thuật</strong> giữa các phòng ban.
                         </div>
                         <ul class="card-features">
-                            <li>Tra cứu sơ đồ nguyên lý, layout lắp đặt 2D/3D.</li>
-                            <li>Tối ưu cho ngành xây dựng, cơ điện & năng lượng.</li>
+                            <li data-i18n="p7_f1">Tra cứu sơ đồ nguyên lý, layout lắp đặt 2D/3D.</li>
+                            <li data-i18n="p7_f2">Tối ưu cho ngành xây dựng, cơ điện & năng lượng.</li>
                         </ul>
                     </div>
                 </article>
@@ -377,19 +390,19 @@
                     <div class="card-img-wrapper">
                         <img src="Fanpage Facebook Solar 24h.png" alt="Fanpage Ecosystem">
                         <div class="overlay">
-                            <a href="https://facebook.com/solar24h" target="_blank" class="preview-btn">Xem trực tiếp</a>
+                            <a href="https://facebook.com/solar24h" target="_blank" class="preview-btn" data-i18n="btn_preview">Xem trực tiếp</a>
                         </div>
                     </div>
                     <div class="card-content">
                         <span class="card-badge">OMNICHANNEL MEDIA</span>
-                        <h4 class="card-title">🌐 Fanpage & Media Brand Hub</h4>
-                        <p class="card-desc">Cổng kết nối truyền thông thương hiệu, đồng bộ đa kênh marketing và CSKH đa nền tảng.</p>
-                        <div class="card-metrics">
+                        <h4 class="card-title" data-i18n="p8_title">🌐 Fanpage & Media Brand Hub</h4>
+                        <p class="card-desc" data-i18n="p8_desc">Cổng kết nối truyền thông thương hiệu, đồng bộ đa kênh marketing và CSKH đa nền tảng.</p>
+                        <div class="card-metrics" data-i18n="p8_metric">
                             <span class="metric-icon">📈</span> Hiệu quả: Tăng <strong>120% tương tác tự nhiên</strong> nhờ nội dung sáng tạo bằng AI.
                         </div>
                         <ul class="card-features">
-                            <li>Định hình nhân vật đại diện thương hiệu (Mascot).</li>
-                            <li>Sản xuất video/audio quảng cáo tự động bằng AI.</li>
+                            <li data-i18n="p8_f1">Định hình nhân vật đại diện thương hiệu (Mascot).</li>
+                            <li data-i18n="p8_f2">Sản xuất video/audio quảng cáo tự động bằng AI.</li>
                         </ul>
                     </div>
                 </article>
@@ -400,31 +413,31 @@
         <section class="section fade-in-up" style="animation-delay: 0.2s;">
             <div class="section-header">
                 <span class="section-number">07</span>
-                <h3 class="section-title">Nhận Xét & Đánh Giá</h3>
+                <h3 class="section-title" data-i18n="sec7_title">Nhận Xét & Đánh Giá</h3>
             </div>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card glass-panel">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content" data-i18n="test1_content">
                         "Tôi đã vô cùng ngạc nhiên và hào hứng với các dự án web app AI của Sang. Đây chính xác là những giải pháp đột phá và bạn ấy là đối tác tiềm năng nhất của chúng tôi."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">P</div>
                         <div class="author-info">
                             <strong>Anh Hồ Ngọc Phương</strong>
-                            <span>Phó Tổng Giám Đốc XB Solar HCM</span>
+                            <span data-i18n="test1_role">Phó Tổng Giám Đốc XB Solar HCM</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card glass-panel">
-                    <div class="testimonial-content">
+                    <div class="testimonial-content" data-i18n="test2_content">
                         "Chúng tôi thực sự thích thú và thường xuyên sử dụng chatbot Solar Girl AI để ứng dụng vào công việc hàng ngày. Nó giúp đẩy nhanh tiến độ tư vấn và chốt sale đáng kể!"
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">S</div>
                         <div class="author-info">
                             <strong>Tấn Phát & Hoàng Huy</strong>
-                            <span>Đội ngũ Sales - Solar 24h</span>
+                            <span data-i18n="test2_role">Đội ngũ Sales - Solar 24h</span>
                         </div>
                     </div>
                 </div>
@@ -435,24 +448,24 @@
         <section class="section fade-in-up" style="animation-delay: 0.3s;">
             <div class="section-header">
                 <span class="section-number">08</span>
-                <h3 class="section-title">Tại sao Doanh nghiệp nên chọn Giải pháp May đo Tinh gọn?</h3>
+                <h3 class="section-title" data-i18n="sec8_title">Tại sao Doanh nghiệp nên chọn Giải pháp May đo Tinh gọn?</h3>
             </div>
             
             <div class="value-grid">
                 <div class="value-card glass-panel hover-glow">
                     <div class="value-icon">⚡</div>
-                    <h4 class="value-head">Triển Khai Siêu Tốc (7 – 14 Ngày)</h4>
-                    <p class="value-sub">Làm chủ phương pháp <strong>Vibe Coding & AI thế hệ mới</strong>, rút ngắn 80% thời gian so với quy trình code truyền thống cồng kềnh.</p>
+                    <h4 class="value-head" data-i18n="v1_title">Triển Khai Siêu Tốc (7 – 14 Ngày)</h4>
+                    <p class="value-sub" data-i18n="v1_desc">Làm chủ phương pháp <strong>Vibe Coding & AI thế hệ mới</strong>, rút ngắn 80% thời gian so với quy trình code truyền thống cồng kềnh.</p>
                 </div>
                 <div class="value-card glass-panel hover-glow">
                     <div class="value-icon">💰</div>
-                    <h4 class="value-head">Sở Hữu 100% & Không Phí Ẩn</h4>
-                    <p class="value-sub">Doanh nghiệp sở hữu vĩnh viễn hệ thống và Database riêng, không phải trả phí thuê bao định kỳ đắt đỏ theo đầu người dùng.</p>
+                    <h4 class="value-head" data-i18n="v2_title">Sở Hữu 100% & Không Phí Ẩn</h4>
+                    <p class="value-sub" data-i18n="v2_desc">Doanh nghiệp sở hữu vĩnh viễn hệ thống và Database riêng, không phải trả phí thuê bao định kỳ đắt đỏ theo đầu người dùng.</p>
                 </div>
                 <div class="value-card glass-panel hover-glow">
                     <div class="value-icon">🎯</div>
-                    <h4 class="value-head">May Đo Đúng Nỗi Đau Vận Hành</h4>
-                    <p class="value-sub">Thiết kế bám sát 100% luồng công việc thực tế, nhân sự sử dụng được ngay lập tức mà không cần đào tạo phức tạp.</p>
+                    <h4 class="value-head" data-i18n="v3_title">May Đo Đúng Nỗi Đau Vận Hành</h4>
+                    <p class="value-sub" data-i18n="v3_desc">Thiết kế bám sát 100% luồng công việc thực tế, nhân sự sử dụng được ngay lập tức mà không cần đào tạo phức tạp.</p>
                 </div>
             </div>
         </section>
@@ -460,14 +473,14 @@
         <!-- FOOTER / CALL TO ACTION -->
         <footer class="hub-box glass-panel fade-in-up" style="animation-delay: 0.4s;">
             <div class="cta-content">
-                <h4>🚀 Trải Nghiệm Trực Tiếp Hệ Sinh Thái Tập Trung Tại:</h4>
+                <h4 data-i18n="footer_title">🚀 Trải Nghiệm Trực Tiếp Hệ Sinh Thái Tập Trung Tại:</h4>
                 <a href="https://cty-solar24h.tranhoangsang89.workers.dev/" target="_blank" class="main-link">
                     https://cty-solar24h.tranhoangsang89.workers.dev/
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
                 
                 <div class="footer-contact">
-                    <p>Tư vấn & Triển khai Giải pháp Chuyển đổi số:</p>
+                    <p data-i18n="footer_contact">Tư vấn & Triển khai Giải pháp Chuyển đổi số:</p>
                     <div class="contact-methods">
                         <strong>Trần Hoàng Sang</strong>
                         <span class="separator">|</span>
@@ -477,11 +490,14 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="copyright" data-i18n="copyright">
                 © 2026 Trần Hoàng Sang. All rights reserved.
             </div>
         </footer>
     </main>
+
+    <!-- Include i18n Script -->
+    <script src="i18n.js"></script>
 
     <script>
         // Simple script for intersection observer to trigger fade-in animations on scroll
