@@ -1192,3 +1192,61 @@ a {
         grid-template-columns: 1fr; /* Stack vertically on mobile */
     }
 }
+
+.text-highlight { color: var(--accent-primary); font-weight: 600; }
+
+/* Floating Zalo Button */
+.floating-zalo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #0068ff; /* Zalo brand color */
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 104, 255, 0.4);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-zalo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 104, 255, 0.6);
+}
+
+.zalo-icon-wrap {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zalo-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.zalo-text {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .floating-zalo {
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 16px 8px 8px;
+    }
+    .zalo-text {
+        display: none; /* Hide text on mobile to just show icon */
+    }
+}
