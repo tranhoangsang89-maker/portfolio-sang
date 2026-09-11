@@ -861,6 +861,124 @@ a {
     text-align: center;
 }
 
+/* --------------------------------
+   COLLABORATION SECTION (Section 02)
+-------------------------------- */
+.collaboration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.collab-img-wrapper {
+    position: relative;
+    border-radius: 16px;
+    padding: 5px;
+    background: linear-gradient(135deg, rgba(255,119,0,0.5), rgba(0,85,212,0.5));
+    box-shadow: 0 10px 40px rgba(255, 119, 0, 0.15), 0 10px 40px rgba(0, 85, 212, 0.15);
+}
+
+.collab-img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.collab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.collab-badge {
+    align-self: flex-start;
+    background: rgba(255, 119, 0, 0.1);
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.collab-subtitle {
+    font-size: 1.3rem;
+    color: var(--accent-secondary);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.collab-desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.collab-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.collab-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.collab-block:nth-child(1) {
+    border-left-color: var(--accent-primary);
+}
+
+.collab-block:nth-child(2) {
+    border-left-color: var(--accent-secondary);
+}
+
+.collab-icon {
+    font-size: 2rem;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.collab-text strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.collab-text p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.collab-highlight {
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(255,119,0,0.1), rgba(0,85,212,0.1));
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.collab-highlight span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* --- MOBILE RESPONSIVE TWEAKS --- */
 @media (max-width: 992px) {
     .header-card {
@@ -889,6 +1007,7 @@ a {
     }
     
     .about-grid,
+    .collaboration-grid,
     .goals-grid,
     .achievements-list,
     .testimonials-grid,
@@ -977,6 +1096,50 @@ a {
     
     .separator {
         display: none;
+    }
+
+    /* Mobile 2-Column Grid for Showcase Cards (App Style) */
+    .showcase-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .showcase-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-img-wrapper {
+        height: 140px; /* Reduced height for 2-column layout */
+    }
+    
+    .card-content {
+        padding: 12px;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .card-desc {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+
+    /* Hide detailed info on mobile to save space and match the reference image */
+    .card-badge, 
+    .card-metrics, 
+    .card-features {
+        display: none;
+    }
+    
+    /* Make the preview button smaller and centered */
+    .preview-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
     }
 }
 
