@@ -780,22 +780,80 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-.achievement-item {
+.ach-card {
+    background-color: rgba(15, 23, 42, 0.9);
+    border: 1px solid #1e293b;
+    border-radius: 1rem;
+    padding: 1.5rem;
     display: flex;
-    gap: 20px;
-    padding: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+.ach-card.card-sang:hover {
+    border-color: rgba(249, 115, 22, 0.4);
+}
+.ach-card.card-solar:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+}
+.ach-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.75rem;
 }
-.achievement-icon {
-    font-size: 2.5rem;
+.ach-logo-box {
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+                linear-gradient(135deg, #f97316, #2563eb) border-box;
+    border: 2px solid transparent;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(249, 115, 22, 0.2);
 }
-.achievement-info h4 {
-    color: #fff;
-    margin-bottom: 8px;
+.ach-logo-box.box-sang {
+    height: 3.5rem; /* h-14 */
+    width: 3.5rem; /* w-14 */
+    padding: 0.25rem; /* p-1 */
 }
-.achievement-info p {
+.ach-logo-box.box-solar {
+    height: 3.5rem; /* h-14 */
+    width: 7rem; /* w-28 */
+    padding: 0.5rem; /* p-2 */
+}
+.ach-logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ach-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+.ach-badge.badge-sang {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: #fb923c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+.ach-badge.badge-solar {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+.ach-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.ach-desc {
     color: var(--text-muted);
     font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* --- 07: TESTIMONIALS --- */
